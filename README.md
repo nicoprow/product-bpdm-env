@@ -6,15 +6,16 @@ This repository contains configuration files and information to our current runn
 
 Available at: https://argocd.int.catena-x.net
 
-| App                       | Chart Version | Root URL                                                                 |
-|---------------------------|---------------|--------------------------------------------------------------------------|
-| bpdm                      | 5.3.0         | https://business-partners.int.catena-x.net/                              | 
-| bpdm-test-sharing-member  | 5.3.0         | https://business-partners.int.catena-x.net/companies/test-sharing-member | 
-| bpdm-sap                  | 5.3.0         | https://business-partners.int.catena-x.net/companies/sap                 | 
-| bpdm-snapshot             | main          | https://business-partners-snapshot.int.catena-x.net/                     |
-| bpdm-provider-edc         | 0.11.1        | https://bpdm-edc.int.catena-x.net                                        | 
-| test-sharing-member-edc   | 0.11.1        | https://bpdm-sharing-member-edc.int.catena-x.net                         | 
-| test-sharing-member-2-edc | 0.11.1        | https://bpdm-sharing-member-edc-2.int.catena-x.net                       | 
+| App                       | Chart Version               | Root URL                                                                 |
+|---------------------------|-----------------------------|--------------------------------------------------------------------------|
+| bpdm                      | 5.3.0                       | https://business-partners.int.catena-x.net/                              | 
+| bpdm-test-sharing-member  | 5.3.0                       | https://business-partners.int.catena-x.net/companies/test-sharing-member | 
+| bpdm-sap                  | 5.3.0                       | https://business-partners.int.catena-x.net/companies/sap                 | 
+| bpdm-snapshot             | main                        | https://business-partners-snapshot.int.catena-x.net/                     |
+| bpdm-hq-relocation        | feat/headquarter-relocation | https://business-partners-hq-relocation.int.catena-x.net/                |
+| bpdm-provider-edc         | 0.11.1                      | https://bpdm-edc.int.catena-x.net                                        | 
+| test-sharing-member-edc   | 0.11.1                      | https://bpdm-sharing-member-edc.int.catena-x.net                         | 
+| test-sharing-member-2-edc | 0.11.1                      | https://bpdm-sharing-member-edc-2.int.catena-x.net                       | 
 
 ## Stable
 

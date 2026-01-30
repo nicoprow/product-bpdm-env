@@ -1,0 +1,17 @@
+project: project-bpdm
+source:
+  repoURL: 'https://github.com/eclipse-tractusx/bpdm.git'
+  path: charts/bpdm
+  targetRevision: feat/headquarter-relocation
+  plugin:
+    name: argocd-vault-plugin-helm-args
+    env:
+      - name: AVP_SECRET
+        value: vault-secret
+      - name: helm_args
+        value: >-
+          -f
+          https://raw.githubusercontent.com/SujitMBRDI/product-bpdm-env/main/int/bpdm-hq-relocation/values.yaml
+destination:
+  server: 'https://kubernetes.default.svc'
+  namespace: product-bpdm
