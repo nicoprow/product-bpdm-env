@@ -11,7 +11,7 @@ source:
       - name: helm_args
         value: >-
           -f
-          https://raw.githubusercontent.com/SujitMBRDI/product-bpdm-env/main/int/bpdm-snapshot/values.yaml
+          https://raw.githubusercontent.com/nicoprow/product-bpdm-env/main/int/bpdm-snapshot/values.yaml
 destination:
   server: 'https://kubernetes.default.svc'
   namespace: product-bpdm

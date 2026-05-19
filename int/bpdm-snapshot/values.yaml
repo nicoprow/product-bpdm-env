@@ -4,7 +4,7 @@ postgres:
     postgresPassword: <path:bpdm/data/int/bpdm/postgresql#postgres-password>
     password: <path:bpdm/data/int/bpdm/postgresql#password>
 
-centralidp:
+keycloak:
   enabled: false
 
 bpdm-gate:
