@@ -4,7 +4,7 @@ postgres:
     postgresPassword: <path:bpdm/data/int/bpdm/postgresql#postgres-password>
     password: <path:bpdm/data/int/bpdm/postgresql#password>
 
-centralidp:
+keycloak:
   enabled: false
 
 bpdm-gate:
@@ -51,6 +51,8 @@ bpdm-gate:
             client-id: <path:bpdm/data/int/bpdm/gate/orchestrator-client#client-id>
       security:
         auth-server-url: https://centralidp.int.catena-x.net/auth
+        client-id: Cl16-CX-BPDMGate
+        realm: CX-Central
         permissions:
           uploadInputPartner: write_input_partner
   applicationSecrets:
@@ -108,6 +110,8 @@ bpdm-pool:
             client-id: <path:bpdm/data/int/bpdm/pool/orchestrator-client#client-id>
       security:
         auth-server-url: https://centralidp.int.catena-x.net/auth
+        client-id: Cl7-CX-BPDM
+        realm: CX-Central
   applicationSecrets:
     spring:
       datasource:
@@ -155,6 +159,8 @@ bpdm-orchestrator:
         host: *bpdmPostgres
       security:
         auth-server-url: https://centralidp.int.catena-x.net/auth
+        client-id: Cl25-CX-BPDM-Orchestrator
+        realm: CX-Central
   applicationSecrets:
     spring:
       datasource:

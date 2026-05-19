@@ -1,7 +1,7 @@
 project: project-bpdm
 source:
   repoURL: 'https://eclipse-tractusx.github.io/charts/dev'
-  targetRevision: 5.3.0-rc1
+  targetRevision: 7.0.0-rc1
   plugin:
     env:
       - name: AVP_SECRET
@@ -9,7 +9,7 @@ source:
       - name: helm_args
         value: >-
           -f
-          https://raw.githubusercontent.com/SujitMBRDI/product-bpdm-env/main/int/bpdm/values.yaml
+          https://raw.githubusercontent.com/nicoprow/product-bpdm-env/main/int/bpdm/values.yaml
   chart: bpdm
 destination:
   server: 'https://kubernetes.default.svc'
